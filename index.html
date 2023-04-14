@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>地鎖控制</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid mt-5">
+        <table class="table table-bordered">
+            <thead>
+                <tr class="text-center" id="spaces">
+                    <th scope="col" >車格一</th>
+                    <th scope="col">車格二</th>
+                    <th scope="col">車格三</th>
+                    <th scope="col">車格四</th>
+                    <th scope="col">車格五</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="text-center">
+                    <td scope="col"><button class="btn btn-danger" id="btn1">禁止</button></td>
+                    <td scope="col"><button class="btn btn-danger" id="btn2">禁止</button></td>
+                    <td scope="col"><button class="btn btn-danger" id="btn3">禁止</button></td>
+                    <td scope="col"><button class="btn btn-danger" id="btn4">禁止</button></td>
+                    <td scope="col"><button class="btn btn-danger" id="btn5">禁止</button></td>
+                </tr>
+                <tr class="text-center" id="status">
+                    <td scope="col">狀態：<span id="status1">可以停車</span></td>
+                    <td scope="col">狀態：<span id="status2">可以停車</span></td>
+                    <td scope="col">狀態：<span id="status3">可以停車</span></td>
+                    <td scope="col">狀態：<span id="status4">可以停車</span></td>
+                    <td scope="col">狀態：<span id="status5">可以停車</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <script src="./js/all.js"></script>
+</body>
+
+</html>
