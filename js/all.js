@@ -12,57 +12,57 @@ const status5 = document.getElementById("status5");
 
 
 btn1.addEventListener("click", function () {
-    if (btn1.textContent == "禁止") {
-        status1.textContent = "禁止停車";
-        btn1.textContent = "開啟";
+    if (btn1.textContent == "車位管制") {
+        status1.textContent = "擋板升起";
+        btn1.textContent = "車位開放";
         btn1.className = "btn btn-outline-success";
-    } else if (btn1.textContent == "開啟") {
-        status1.textContent = "可以停車";
-        btn1.textContent = "禁止";
+    } else if (btn1.textContent == "車位開放") {
+        status1.textContent = "擋板降下";
+        btn1.textContent = "車位管制";
         btn1.className = "btn btn-danger";
     }
 })
 btn2.addEventListener("click", function () {
-    if (btn2.textContent == "禁止") {
-        status2.textContent = "禁止停車";
-        btn2.textContent = "開啟";
+    if (btn2.textContent == "車位管制") {
+        status2.textContent = "擋板升起";
+        btn2.textContent = "車位開放";
         btn2.className = "btn btn-outline-success";
-    } else if (btn2.textContent == "開啟") {
-        status2.textContent = "可以停車";
-        btn2.textContent = "禁止";
+    } else if (btn2.textContent == "車位開放") {
+        status2.textContent = "擋板降下";
+        btn2.textContent = "車位管制";
         btn2.className = "btn btn-danger";
     }
 })
 btn3.addEventListener("click", function () {
-    if (btn3.textContent == "禁止") {
-        status3.textContent = "禁止停車";
-        btn3.textContent = "開啟";
+    if (btn3.textContent == "車位管制") {
+        status3.textContent = "擋板升起";
+        btn3.textContent = "車位開放";
         btn3.className = "btn btn-outline-success";
-    } else if (btn3.textContent == "開啟") {
-        status3.textContent = "可以停車";
-        btn3.textContent = "禁止";
+    } else if (btn3.textContent == "車位開放") {
+        status3.textContent = "擋板降下";
+        btn3.textContent = "車位管制";
         btn3.className = "btn btn-danger";
     }
 })
 btn4.addEventListener("click", function () {
-    if (btn4.textContent == "禁止") {
-        status4.textContent = "禁止停車";
-        btn4.textContent = "開啟";
+    if (btn4.textContent == "車位管制") {
+        status4.textContent = "擋板升起";
+        btn4.textContent = "車位開放";
         btn4.className = "btn btn-outline-success";
-    } else if (btn4.textContent == "開啟") {
-        status4.textContent = "可以停車";
-        btn4.textContent = "禁止";
+    } else if (btn4.textContent == "車位開放") {
+        status4.textContent = "擋板降下";
+        btn4.textContent = "車位管制";
         btn4.className = "btn btn-danger";
     }
 })
 btn5.addEventListener("click", function () {
-    if (btn5.textContent == "禁止") {
-        status5.textContent = "禁止停車";
-        btn5.textContent = "開啟";
+    if (btn5.textContent == "車位管制") {
+        status5.textContent = "擋板升起";
+        btn5.textContent = "車位開放";
         btn5.className = "btn btn-outline-success";
-    } else if (btn5.textContent == "開啟") {
-        status5.textContent = "可以停車";
-        btn5.textContent = "禁止";
+    } else if (btn5.textContent == "車位開放") {
+        status5.textContent = "擋板降下";
+        btn5.textContent = "車位管制";
         btn5.className = "btn btn-danger";
     }
 })
