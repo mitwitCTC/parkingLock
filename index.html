@@ -12,44 +12,42 @@
 </head>
 
 <body>
-    <div class="container-fluid mt-5">
-        <img src="./images/S__24854589.jpg" alt="" style="width: 15%; display: block;" class="mx-auto my-3">
-        <h1 class="text-center">應安168停車聯盟延平北場 <br>專用車位管理系統</h1>
-        <table class="table table-bordered">
-            <thead>
-                <tr class="text-center" id="spaces">
-                    <th scope="col">車格一</th>
-                    <th scope="col">車格二</th>
-                    <th scope="col">車格三</th>
-                    <th scope="col">車格四</th>
-                    <th scope="col">車格五</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="text-center">
-                    <td scope="col"><button class="btn btn-danger" id="btn1">車位管制</button></td>
-                    <td scope="col"><button class="btn btn-danger" id="btn2">車位管制</button></td>
-                    <td scope="col"><button class="btn btn-danger" id="btn3">車位管制</button></td>
-                    <td scope="col"><button class="btn btn-danger" id="btn4">車位管制</button></td>
-                    <td scope="col"><button class="btn btn-danger" id="btn5">車位管制</button></td>
-                </tr>
-                <tr class="text-center" id="status">
-                    <td scope="col">擋板狀態：<span id="status1">擋板降下</span></td>
-                    <td scope="col">擋板狀態：<span id="status2">擋板降下</span></td>
-                    <td scope="col">擋板狀態：<span id="status3">擋板降下</span></td>
-                    <td scope="col">擋板狀態：<span id="status4">擋板降下</span></td>
-                    <td scope="col">擋板狀態：<span id="status5">擋板降下</span></td>
-                </tr>
-            </tbody>
-        </table>
+    <div id="app">
+        <div class="container-fluid mt-5">
+            <img src="./images/S__24854589.jpg" alt="" style="width: 15%; display: block;" class="mx-auto my-3">
+            <h1 class="text-center">應安168停車聯盟延平北場 <br>專用車位管理系統</h1>
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr class="col text-center">
+                            <th class="col text-center">車位</th>
+                            <th class="col text-center">管制按鈕</th>
+                            <th class="col text-center">擋板狀態</th>
+                        </tr>
+                    </thead>
+                    <tbody v-for="item in spaces" :key="item.id">
+                        <tr class="text-center">
+                            <td>{{ item.space }}</td>
+                            <td class="col text-center">
+                                <button class="btn" @click="toggleBtn(item.id)"
+                                    :class="[item.btn ? 'btn-outline-success' : 'btn-danger']">
+                                    {{ item.btn ? "車位開放" : "車位管制" }}
+                                </button>
+                            </td>
+                            <td scope="col">
+                                <img v-if="item.status" src="./images/擋板下降.png" alt="" style="width: 200px;">
+                                <img v-else="item.status" src="./images/擋板上升.png" alt="" style="width: 200px;">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
-
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
-    <script src="./js/all.js"></script>
+    <script type="module" src="./js/all.js"></script>
 </body>
 
 </html>
