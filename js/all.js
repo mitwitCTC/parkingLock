@@ -42,6 +42,12 @@ createApp({
             const index = this.spaces.findIndex(space => space.id === id);
             this.spaces[index].btn = !this.spaces[index].btn;
             this.spaces[index].status = !this.spaces[index].status;
+        },
+        up(){
+            this.spaces.map((item) => {item.status = false, item.btn = true});
+        },
+        down(){
+            this.spaces.map((item) => {item.status = true,item.btn = false});
         }
     },
     mounted(){
