@@ -14,19 +14,19 @@
 <body>
     <div id="app">
         <div class="container-fluid mt-5">
-            <img src="./images/S__24854589.jpg" alt="" style="width: 15%; display: block;" class="mx-auto my-3">
+            <img src="./images/S__24854587.jpg" alt="" style="width: 15%; display: block;" class="mx-auto my-3">
             <h1 class="text-center">應安168停車聯盟延平北場 <br>專用車位管理系統</h1>
             <div class="table-responsive">
                 <table class="table table-bordered">
                     <thead>
-                        <tr class="col text-center">
+                        <tr class="col text-center fs-2">
                             <th class="col text-center">車位</th>
                             <th class="col text-center">管制按鈕</th>
                             <th class="col text-center">擋板狀態</th>
                         </tr>
                     </thead>
                     <tbody v-for="item in spaces" :key="item.id">
-                        <tr class="text-center">
+                        <tr class="text-center fs-3 align-middle">
                             <td>{{ item.space }}</td>
                             <td class="col text-center">
                                 <button class="btn" @click="toggleBtn(item.id)"
